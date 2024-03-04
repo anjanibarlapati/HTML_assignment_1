@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menu Buttons</title>
+<style>
+    .menu-btn {
+        padding: 10px 20px;
+        margin: 5px;
+        background-color: rgba(4, 70, 238, 0.889);
+        color:white;
+        border: none;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+    <button class="menu-btn" onclick="changeText(this)">Button 1</button>
+    <button class="menu-btn" onclick="changeText(this)">Button 2</button>
+    <button class="menu-btn" onclick="changeText(this)">Button 3</button>
+    <button class="menu-btn" onclick="changeText(this)">Button 4</button>
+    <button class="menu-btn" onclick="changeText(this)">Button 5</button>
+    <p id="text">Text</p>
+
+    <script>
+        function changeText(button) {
+            document.getElementById('text').textContent = button.textContent;
+        }
+    </script>
+</body>
+</html>
